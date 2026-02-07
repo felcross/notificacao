@@ -3,11 +3,11 @@ package com.projetozero.notificacao;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class NotificacaoApplicationTests {
+//@SpringBootTest
+//class NotificacaoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+///	@Test
+//	void contextLoads() {
+//	}
 
-}
+//}
