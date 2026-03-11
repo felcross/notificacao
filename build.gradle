@@ -47,7 +47,7 @@ sonarqube {
 	properties {
 		property "sonar.projectKey", "notificacao"
 		property "sonar.host.url", "http://localhost:9000"
-		property "sonar.token", "sqa_3e48035e2f3175ae6928253a369a67dc4f61d64b"
+		property "sonar.token", System.getenv("SONAR_TOKEN")
 	}
 
 }
