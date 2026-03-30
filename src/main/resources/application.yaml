@@ -1,4 +1,14 @@
+server:
+  port: 8083
+
 spring:
+  application:
+    name: notificacao
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   mail:
     host: smtp.gmail.com
     port: 587
@@ -6,22 +16,13 @@ spring:
     password: hzub gfpg jbpd skoj
     protocol: smtp
     properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-          connectiontimeout: 5000
-          timeout: 3000
-          writetimeout: 5000
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
 
 thymeleaf:
-  enable: true
+  enabled: true
 
 envio:
   email:
     remetente: feljava32@gmail.com
     nomeRemetente: 'FCross'
-
-server:
-  port: 8082

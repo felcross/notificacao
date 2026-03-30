@@ -37,6 +37,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-thymeleaf-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// Abstração do Spring para RabbitMQ (AMQP)
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+	// Opcional: Útil para testes de integração com Rabbit
+	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 }
 
 tasks.named('test') {
