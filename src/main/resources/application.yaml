@@ -5,24 +5,23 @@ spring:
   application:
     name: notificacao
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USER:guest}
+    password: ${RABBITMQ_PASS:guest}
   mail:
     host: smtp.gmail.com
     port: 587
-    username: feljava32@gmail.com
-    password: hzub gfpg jbpd skoj
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     protocol: smtp
     properties:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
 
-thymeleaf:
-  enabled: true
+spring.thymeleaf.enabled: true
 
 envio:
   email:
-    remetente: feljava32@gmail.com
+    remetente: ${MAIL_USERNAME}
     nomeRemetente: 'FCross'
