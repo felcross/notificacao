@@ -47,7 +47,7 @@ public class EmailService {
 
             helper.setText(content, true);
             javaMailSender.send(mensagem);
-        } catch (MessagingException e) {
+        } catch (MessagingException | RuntimeException e) {
             throw new EmailException("Erro ao processar e-mail", e);
         }
     }
