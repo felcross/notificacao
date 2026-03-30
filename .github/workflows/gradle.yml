@@ -25,8 +25,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build and Run Tests
-        # O comando 'build' no Gradle já executa o 'test' por padrão.
-        # Se algum teste falhar, o build falha e o PR fica "vermelho".
+
         run: ./gradlew build --stacktrace
 
       - name: Publish Test Report
