@@ -1,27 +1,27 @@
+server:
+  port: 8083
+
 spring:
+  application:
+    name: notificacao
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USER:guest}
+    password: ${RABBITMQ_PASS:guest}
   mail:
     host: smtp.gmail.com
     port: 587
-    username: feljava32@gmail.com
-    password: hzub gfpg jbpd skoj
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     protocol: smtp
     properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-          connectiontimeout: 5000
-          timeout: 3000
-          writetimeout: 5000
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
 
-thymeleaf:
-  enable: true
+spring.thymeleaf.enabled: true
 
 envio:
   email:
-    remetente: feljava32@gmail.com
+    remetente: ${MAIL_USERNAME}
     nomeRemetente: 'FCross'
-
-server:
-  port: 8082
