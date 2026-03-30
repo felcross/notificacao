@@ -1,4 +1,4 @@
-package com.projetozero.bffagendador.infrastructure.exception;
+package com.projetozero.notificacao.infrastructure.exception;
 
 public class BusinessException extends RuntimeException {
 
