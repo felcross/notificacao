@@ -6,6 +6,7 @@ build/
 !**/src/test/**/build/
 *.hprof
 application-local.yml
+application-local.properties
 
 ### STS ###
 .apt_generated
@@ -39,3 +40,4 @@ out/
 .vscode/
 
 src/main/resources/application-local.yml
+**/application-local.yml

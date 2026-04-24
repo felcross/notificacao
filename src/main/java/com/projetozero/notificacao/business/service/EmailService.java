@@ -22,7 +22,7 @@ public class EmailService {
     private final JavaMailSender javaMailSender;
     private final TemplateEngine templateEngine;
 
-    @Value("${envio.email.remetente}")
+    @Value("${envio.email.remetente:feljava32@gmail.com}")
     private String remetente;
 
     public void enviarEmailGenerico(NotificacaoEmailRecord dto) {

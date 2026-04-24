@@ -4,11 +4,14 @@ server:
 spring:
   application:
     name: notificacao
+
+  # Agrupando tudo que é do Spring aqui
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
     username: ${RABBITMQ_USER:guest}
     password: ${RABBITMQ_PASS:guest}
+
   mail:
     host: smtp.gmail.com
     port: 587
@@ -19,7 +22,8 @@ spring:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
 
-spring.thymeleaf.enabled: true
+  thymeleaf:
+    enabled: true
 
 envio:
   email:
