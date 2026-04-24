@@ -1,0 +1,16 @@
+2026-04-03T17:03:10.366-03:00  INFO 64555 --- [notificacao] [main] c.p.notificacao.NotificacaoApplication   : Starting NotificacaoApplication using Java 21.0.10 with PID 64555 (/home/fcross/projetos2/vendas-microservicos/notificacao/build/classes/java/main started by fcross in /home/fcross/projetos2/vendas-microservicos/notificacao)
+2026-04-03T17:03:10.378-03:00 DEBUG 64555 --- [notificacao] [main] c.p.notificacao.NotificacaoApplication   : Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-04-03T17:03:10.379-03:00  INFO 64555 --- [notificacao] [main] c.p.notificacao.NotificacaoApplication   : The following 1 profile is active: "local"
+2026-04-03T17:03:11.676-03:00  INFO 64555 --- [notificacao] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-03T17:03:11.694-03:00  INFO 64555 --- [notificacao] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-03T17:03:11.695-03:00  INFO 64555 --- [notificacao] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-04-03T17:03:11.751-03:00  INFO 64555 --- [notificacao] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1283 ms
+2026-04-03T17:03:12.646-03:00  INFO 64555 --- [notificacao] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-03T17:03:12.650-03:00  INFO 64555 --- [notificacao] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-03T17:03:12.752-03:00  INFO 64555 --- [notificacao] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4e8b357d:0/SimpleConnection@a0c5be [delegate=amqp://guest@127.0.0.1:5672/, localPort=48622]
+2026-04-03T17:03:12.760-03:00  INFO 64555 --- [notificacao] [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (q.enviar-email) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2026-04-03T17:03:12.873-03:00  INFO 64555 --- [notificacao] [main] c.p.notificacao.NotificacaoApplication   : Started NotificacaoApplication in 3.172 seconds (process running for 3.731)
+2026-04-03T17:18:03.969-03:00  INFO 64555 --- [notificacao] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2026-04-03T17:18:04.552-03:00  INFO 64555 --- [notificacao] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2026-04-03T17:18:04.554-03:00  INFO 64555 --- [notificacao] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-03T17:18:04.561-03:00  INFO 64555 --- [notificacao] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
